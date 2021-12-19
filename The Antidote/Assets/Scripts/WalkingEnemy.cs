@@ -43,7 +43,7 @@ public class WalkingEnemy : EnemyController
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speedtowardplayer * Time.deltaTime);
+        //transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speedtowardplayer * Time.deltaTime);
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -51,11 +51,13 @@ public class WalkingEnemy : EnemyController
         {
             if(other.GetContact(0).point.x > this.transform.position.x)
             {
-                Destroy(this.gameObject, 0f);
+                //Destroy(this.gameObject, 0f);
+                this.health -= 10;
             }
             else if (other.GetContact(0).point.y > this.transform.position.y)
             {
-                Destroy(this.gameObject, 0f);
+                //Destroy(this.gameObject, 0f);
+                this.health -= 10;
             }
         }
     }

@@ -4,5 +4,38 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: c38dafe39a7b93a4089da8f666b9c1c1
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: 343d5ef68b0b7064cb161b84dc619881
+  - enabled: 1
+    path: Assets/Scenes/VictoryScene.unity
+    guid: 54d2e923e362f464fa93335ad628baf2
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 11482fb183dc4c94d97d6a8c6141fabb
+  - enabled: 1
+    path: Assets/Scenes/Level1Scene1.unity
+    guid: cc8dc716b9f28d34193c1c59fb790431
+  - enabled: 1
+    path: Assets/Scenes/Level1Scene2.unity
+    guid: bf640c074d395724abf5502bcdf87465
+  - enabled: 1
+    path: Assets/Scenes/Level2Scene1.unity
+    guid: 00325776ebb0d634fa2c1951ab77b5e6
+  - enabled: 1
+    path: Assets/Scenes/Level2Scene2.unity
+    guid: 88297e7ac033f0e4eb2ef4804edc4914
+  - enabled: 1
+    path: Assets/Scenes/Level3Scene1.unity
+    guid: cb17f50f40fab5a42b271f5fec9e1d5b
+  - enabled: 1
+    path: Assets/Scenes/Level3Scene2.unity
+    guid: 86fa3d9ba0ffb7a4880431f25e1b790a
+  - enabled: 1
+    path: Assets/Scenes/AntidoteRocketScene.unity
+    guid: 3616c5cc319f0564faaf75157683d990
   m_configObjects: {}

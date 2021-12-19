@@ -36,7 +36,7 @@ public class Controller : MonoBehaviour {
         }
 
 
-        if (Input.GetMouseButton(0) == true && Input.GetMouseButton(1) == true)
+        if (Input.GetMouseButtonDown(0) == true && Input.GetMouseButton(1) == true)
         {
             anim.SetBool("Shoot", true);
             Shoot();

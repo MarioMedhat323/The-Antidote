@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour {
 	public float speed;
+	public int damage = 10;
 	// Use this for initialization
 	void Start () {
 		Controller player;
@@ -20,13 +21,22 @@ public class BulletController : MonoBehaviour {
 	void Update () {
 		GetComponent<Rigidbody2D>().velocity = new Vector2(speed, GetComponent<Rigidbody2D>().velocity.y);
 	}
-	void onTriggerEnter2D(Collider2D other)
+	/*void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Enemy")
         {
-			//Destroy(other.gameObject);
 			
-				Destroy(this.gameObject);
+			Destroy(other.gameObject);
+			Destroy(this.gameObject);
 		}
-    }
+    }*/
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.tag == "Enemy")
+		{
+			FindObjectOfType<WalkingEnemy>().EnemyDamage(damage);
+			Destroy(this.gameObject);
+		}
+	}
 }

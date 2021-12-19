@@ -25,6 +25,7 @@ public class FollowingEnemy : EnemyController
 		{
 			Flip();
 		}
+
 	}
 }
 

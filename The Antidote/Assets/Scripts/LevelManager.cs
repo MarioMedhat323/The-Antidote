@@ -21,7 +21,8 @@ public class LevelManager : MonoBehaviour
     {
         FindObjectOfType<Controller>().transform.position = Checkpoint.transform.position;
     }
-    public void Respawnenemy()
+
+    public void RespawnEnemy()
     {
         Instantiate(enemy, Checkpoint.transform.position, Checkpoint.transform.rotation);
     }
